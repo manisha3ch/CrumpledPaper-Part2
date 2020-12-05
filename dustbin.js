@@ -4,8 +4,8 @@ class Dustbin{
             isStatic:true
         }
         this.bottombody = Bodies.rectangle(x,y,width,height,options);
-        this.leftWallbody = Bodies.rectangle(x-50, y-45,height,width,options);
-        this.rightWallbody = Bodies.rectangle(x+50, y-45,height,width,options);
+        this.leftWallbody = Bodies.rectangle(x-50, y-55,height,width,options);
+        this.rightWallbody = Bodies.rectangle(x+50, y-55,height,width,options);
         this.wd = width;
         this.ht = height;
         this.image= loadImage("dustbingreen.png");
@@ -17,6 +17,10 @@ class Dustbin{
         var rightWallpos = this.rightWallbody.position;
         rectMode(CENTER);
         imageMode(CENTER);
-        image(this.image,bottompos.x,bottompos.y-45,this.wd,this.wd,);
+        image(this.image,bottompos.x,bottompos.y-52,this.wd+5,this.wd,);
+        textSize(14);
+        stroke("black");
+        fill("black");
+        text("USE ME",bottompos.x-28,bottompos.y-85);
     }
 }

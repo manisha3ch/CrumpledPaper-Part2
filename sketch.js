@@ -22,7 +22,7 @@ function setup() {
 	land = new Ground(width/2, height,width,height/10);
 
 	//Create a dustbin
-	garbageBox = new Dustbin(width-100, height-50,100,10);
+	garbageBox = new Dustbin(width-100, height-60,100,10);
 
 	//Create a paper ball
 	paperBall = new Paper(50, height-50,20);
